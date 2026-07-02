@@ -4,25 +4,27 @@ let questions = [
         head: "בחרו את סוג הטיפול בהתאם לראשי תיבות ״חסן דפק ברז״:",
         type: "american",
         option: ["טיפול לפני תנועה", "טיפול אחרי תנועה", "טיפול יזום"],
-        answer: "טיפול לפני תנועה"                                    //******no clue actually */
+        answer: "טיפול לפני תנועה"
     },
     {
         number: 1,
+        part: "a",
         head: "מה מסמלת האות ח בחסן דפק ברז?",
         type: "open",
         option: [],
         answer: "חיזוקים"
     },
     {
-        number: 2,
+        number: 1,
+        part: "b",
         head: "מה נחזק בטלת?",
         type: "american",
         option: ["צלבי c6 וc7, גלגלים מניע ומתח את כל הברגים,בגלגלי מרכוב 3 ברגים בצורת משולש", "צלבי c6 וc7, גלגלים מניע מרכוב ומתח את כל הברגים", "צלבי c6 וc7, רק את הגלגלי מרכוב 3 ברגים בצורת משלוש", "אף תשובה"],
-        answer: "צלבי c6 וc7, גלגלים מניע ומתח את כל הברגים,בגלגלי מרכוב 3 ברגים בצורת משולש"   //******no clue actually */
+        answer: "צלבי c6 וc7, גלגלים מניע ומתח את כל הברגים,בגלגלי מרכוב 3 ברגים בצורת משולש"
     },
     {
-        number: 3,
-        head: "מתחו קו בין הצמד הנכון:",
+        number: 2,
+        head: `מתחו קו בין הצמד הנכון:<br>(לחצו על מנת לחבר)`,
         type: "connect",
         pairs: [
             {
@@ -40,101 +42,93 @@ let questions = [
         ]
     },
     {
-        number: 4,
+        number: 3,
+        part: "a",
         head: "מה מסמלת האות נ בחסן דפק ברז?",
         type: "open",
         option: [],
         answer: "נוזלים"
     },
     {
-        number: 5,
+        number: 3,
+        part: "b",
         head: "מהם סוגי הנוזלים שיש לנו בנגמ״ש?",
         type: "open",
         option: [],
         answer: "שמן, סולר ,ומים"
     },
     {
-        number: 6,
+        number: 4,
         head: "מה נוודא בדלת חיר בטלת?",
         type: "american",
         option: ["שאינה נצורה", "שהיא נצורה", "שהיא פתוחה"],
         answer: "שאינה נצורה"
     },
     {
-        number: 7,
+        number: 5,
         head: "בטלת אנו נוודא שכל הפיני ביטחון תקינים,ובמידה ומדף פתוח אנו נאבטח אותו בעזרת הפין ביטחון.",
         type: "truth",
         option: ["נכון", "לא נכון"],
         answer: "נכון"
     },
     {
-        number: 8,
+        number: 6,
         head: "בטיפול אחרי תנועה אנו נשתמש בראשי תיבות חנך תמר",
         type: "truth",
         option: ["נכון", "לא נכון"],
         answer: "נכון"
     },
     {
-        number: 9,
+        number: 7,
         head: "מה נבדוק באות כ בראשי התיבות חנך תמר?",
         type: "open",
         option: [],
         answer: "שהכבש עולה ויורד"
     },
-
-
-
-
-
-
     {
-        number: 10,
-        head: "סמנו נכון/לא נכון במידה וסימנתם לא נכון רשמו את התשובה הנכונה. האות מ' בטאת מסמלת מים,נבדוק שיש מספיק מים",
-        type: "truth",
+        number: 8,
+        head: "סמנו נכון/לא נכון במידה וסימנתם לא נכון רשמו את התשובה הנכונה.<br>האות מ' בטאת מסמלת מים,נבדוק שיש מספיק מים.",
+        type: "truth-open",
         option: ["נכון", "לא נכון"],
-        answer: "האות מ מסמלת מזקו״ם,נבצע בדיקה ויזואלית לראות שהמזקו״ם תקין."           //*******// 
+        answer: {
+            truth: "לא נכון",        //**** TODO: ****// 
+            text: "האות מ מסמלת מזקו״ם,נבצע בדיקה ויזואלית לראות שהמזקו״ם תקין."
+        }
     },
-
-
-
-
-
-
-
     {
-        number: 11,
+        number: 9,
         head: "מתי נבצע טפ״ש?",
         type: "open",
         option: [],
         answer: "טפ״ש זה טיפול שבועי,נבצע אחרי שנסענו עם הנגמ״ש במהלך השבוע."
     },
     {
-        number: 12,
-        head: "על פי ראשי התיבות פג שכח מצברים - מה מסמלת האות פ ומה נעשה?",
+        number: 10,
+        head: "על פי ראשי התיבות פג שכח מצברים - <br>מה מסמלת האות פ ומה נעשה?",
         type: "open",
         option: [],
         answer: "פילטר אוויר,ננקה עם לחץ אוויר."
     },
     {
-        number: 13,
+        number: 11,
         head: "רשמו 2 דוגמאות למקומות בהם נשמן עם ספרי שמן בטפ״ש.",
         type: "open",
         option: [],
         answer: "פרפרית נהג ,ווי גרירה, בורג ביצים,פרפרית מפקד."
     },
     {
-        number: 14,
+        number: 12,
         head: "מה שונה בין חיזוק הגלגלים בטל״ת לחיזוק גלגלים בטפ״ש?",
         type: "open",
         option: [],
         answer: "בטפ״ש נחזק את כל הברגים וגלגלים,בטל״ת בגלגלי מרכוב נחזק 3 ברגים."
     },
     {
-        number: 15,
-        head: "כיצד מתבצע ניקוי המצברים?",
+        number: 13,
+        head: "כיצד מתבצע ניקוי המצברים?<br>(בחר 2 תשובות נכונות)",
         type: "multiple-choice",
-        option: ["נפתח את החורים שבפקקים", "נשטוף עם מים את המצברים", "לא מנקים את המצברים", "ננקה את ההפקקים בעזרת מטלית יבשה"],
-        answer: ["נפתח את החורים שבפקקים", "ננקה את ההפקקים בעזרת מטלית יבשה"]
+        option: ["נפתח את החורים שבפקקים", "נשטוף עם מים את המצברים", "לא מנקים את המצברים", "ננקה את המצברים בעזרת מטלית יבשה"],
+        answer: ["נפתח את החורים שבפקקים", "ננקה את המצברים בעזרת מטלית יבשה"]
     }
 ];
 
@@ -163,7 +157,6 @@ window.addEventListener("load", () => {
     }
     // PRACTICE
     else if (document.getElementById("question")) {
-        // countQuest = quizData.currentQuestion || 0;
         countQuest = 0;
         showQuestion(countQuest);
         startTimer();
@@ -204,6 +197,9 @@ function showQuestion(q) {
             break;
         case "truth":
             showTruthInput(q);
+            break;
+        case "truth-open":
+            showTruthOpenInput(q);
             break;
         case "connect":
             showConnectInput(q);
@@ -322,6 +318,55 @@ function showTruthInput(q) {
         inputDiv.appendChild(truthBtn);
     });
 };
+function showTruthOpenInput(q) {
+    const inputDiv = document.getElementById("input-div");
+    inputDiv.innerHTML = "";
+
+    questions[q].option.forEach(option => {
+        const truthBtn = document.createElement("button");
+        truthBtn.type = "button";
+        truthBtn.className = "truth-option";
+        truthBtn.textContent = option;
+        truthBtn.value = option;
+
+        truthBtn.addEventListener("click", () => {
+
+            document.querySelectorAll(".truth-option").forEach(btn =>
+                btn.classList.remove("selectedTO")
+                //btn.classList.remove("selected");
+            );
+
+            //truthBtn.classList.add("selected");
+            truthBtn.classList.add("selectedTO");
+
+            let input = document.getElementById("truth-open-input");
+
+            if (truthBtn.value === "לא נכון") {
+
+                if (!input) {
+                    input = document.createElement("input");
+                    input.id = "truth-open-input";
+                    input.type = "text";
+                    input.placeholder = "כתבו את התשובה הנכונה";
+
+                    input.addEventListener("input", () => {
+                        setAnswered(input.value.trim() !== "");
+                    });
+
+                    inputDiv.appendChild(input);
+                }
+
+                setAnswered(input.value.trim() !== "");
+            }
+            else {
+                input?.remove();
+                setAnswered(true);
+            }
+        });
+
+        inputDiv.appendChild(truthBtn);
+    });
+}
 function showConnectInput(q) {
     selectedButton = null;
     userConnections = [];
@@ -478,6 +523,38 @@ function handleCheck() {
             });
             break;
 
+        case "truth-open":
+            const selectedTO = document.querySelector(".truth-option.selectedTO");
+            const typed = document.getElementById("truth-open-input")?.value ?? "";
+
+            userAnswer = {
+                truth: selectedTO?.value ?? "",
+                text: typed
+            };
+
+            document.querySelectorAll(".truth-option").forEach(button => {
+                if (button.value === current.answer.truth) {
+                    button.classList.add("correct-answer");
+                }
+
+                if (
+                    button.classList.contains("selectedTO") &&
+                    button.value !== current.answer.truth
+                ) button.classList.add("wrong-answer");
+
+                button.classList.remove("selectedTO");
+                button.disabled = true;
+            });
+
+            const answerBoxTruth = document.createElement("div");
+            answerBoxTruth.id = "correct-answer";
+            answerBoxTruth.innerHTML = `<strong>תשובה:</strong> ${current.answer.text}`;
+            inputDiv.appendChild(answerBoxTruth);
+
+            document.getElementById("truth-open-input")?.setAttribute("disabled", true);
+
+            break;
+
         case "connect":
             showUserResult();
 
@@ -504,8 +581,8 @@ function handleCheck() {
 function handleContinue() {
     isChecked = false;
     countQuest++;
-    quizData.currentQuestion = countQuest;
-    localStorage.setItem("quizData", JSON.stringify(quizData));
+    // quizData.currentQuestion = countQuest;
+    // localStorage.setItem("quizData", JSON.stringify(quizData));
 
     if (countQuest < questions.length) {
         showQuestion(countQuest);
@@ -689,16 +766,9 @@ function drawConnection(startButton, endButton, color = "#F9F2D6") {
     const endRect = endButton.getBoundingClientRect();
 
     const DOT_RADIUS = 6;
-    const x1 =
-        startButton.dataset.side === "left"
-            ? startRect.right - svgRect.left
-            : startRect.left - svgRect.left;
 
-    const x2 =
-        endButton.dataset.side === "left"
-            ? endRect.right - svgRect.left
-            : endRect.left - svgRect.left;
-
+    const x1 = startRect.left + startRect.width / 2 - svgRect.left;
+    const x2 = endRect.left + endRect.width / 2 - svgRect.left;
     const y1 = startRect.top + startRect.height / 2 - svgRect.top;
     const y2 = endRect.top + endRect.height / 2 - svgRect.top;
     const length = Math.hypot(x2 - x1, y2 - y1);

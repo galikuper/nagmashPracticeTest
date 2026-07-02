@@ -19,9 +19,7 @@ body {
 }
 
 * {
-
     /* outline: 1px solid red; */
-        {}
 }
 
 #left-logos {
@@ -74,6 +72,10 @@ body {
 
 
 
+
+
+
+
 /* INSTRUNTIONS and FINISH*/
 #frog-and-text {
     width: 90vw;
@@ -102,6 +104,10 @@ body {
     min-width: 150px;
     cursor: pointer;
 }
+
+
+
+
 
 
 
@@ -167,7 +173,6 @@ body {
     color: #F9F2D6;
 }
 
-
 .correct-answer {
     background-color: #F9F2D6 !important;
     outline: 5px solid#AFE3A8 !important;
@@ -178,11 +183,6 @@ body {
     outline: 5px solid#F0B4B4 !important;
 }
 
-#form-btn {
-    /* margin-bottom: 70px; */
-}
-
-
 
 
 /* header */
@@ -191,66 +191,11 @@ body {
     font-size: larger;
     text-align: center;
     max-width: 100%;
-
     padding: 1rem;
-
-    /* background: #F9F2D6;
-    border: 12px solid transparent;
-    border-image: url("brush-border.svg") 30 stretch; */
-
 
     background-color: #F9F2D6;
     border-radius: 20px;
-
-    /* border-image: url(assets/header.svg); */
 }
-
-/* #header {
-    position: relative;
-    padding: 1rem;
-    background: #F9F2D6;
-    border-radius: 20px;
-}
-
-#header::before {
-    content: "";
-    position: absolute;
-    inset: -6px;
-    border-radius: 24px;
-    background: #F9F2D6;
-    z-index: -1;
-
-    filter: blur(1px);
-
-    clip-path: polygon(
-        2% 6%, 8% 2%, 16% 4%, 25% 1%, 34% 5%, 46% 2%, 55% 6%,
-        64% 3%, 74% 7%, 84% 4%, 95% 8%, 98% 18%, 99% 32%,
-        97% 45%, 100% 58%, 96% 71%, 98% 86%, 93% 96%,
-        80% 98%, 65% 96%, 52% 99%, 39% 95%, 24% 98%,
-        11% 94%, 3% 86%, 1% 68%, 3% 50%, 0% 35%, 2% 20%
-    );
-} */
-
-/* 
-#header {
-    background: #F9F2D6;
-    border-radius: 20px;
-    padding: 1rem;
-    border: 4px solid #F9F2D6;
-
-    box-shadow:
-        2px 1px 0 #F9F2D6,
-        -2px -1px 0 #F9F2D6,
-        3px -2px 0 #F9F2D6,
-        -3px 2px 0 #F9F2D6;
-    box-shadow:
-        2px 1px 0 red,
-        -2px -1px 0 red,
-        3px -2px 0 red,
-        -3px 2px 0 red;
-} */
-#header {}
-
 
 
 
@@ -461,27 +406,27 @@ input[type="checkbox"]:checked::before {
     transition: transform 0.15s ease, background-color 0.15s ease;
 }
 
-.truth-option.selected {
+.truth-option.selected,
+.truth-option.selectedTO {
     background-color: #F9F2D6;
     transform: scale(1.02);
 }
 
+#input-div.truth-open {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+    justify-content: center;
+    align-content: center;
+    row-gap: 12px;
+    column-gap: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#input-div.truth-open.has-input {
+    align-content: flex-start;
+    padding-top: 50px;
+}
 
 
 
