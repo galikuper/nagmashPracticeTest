@@ -78,7 +78,8 @@ body {
 #frog-and-text {
     width: 90vw;
     max-width: 400px;
-    /* margin-top: 10vh; */
+
+    /* overflow: hidden; */
 }
 
 #frogged-text {
@@ -89,7 +90,9 @@ body {
     width: 90vw;
     max-width: 400px;
     position: relative;
-    right: 150px;
+
+    /* right: 150px; */
+    transform: translateX(-150px);
 }
 
 #restart-practice,
