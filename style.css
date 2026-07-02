@@ -18,6 +18,11 @@ body {
     overflow-x: hidden;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 * {
     /* outline: 1px solid red; */
 }
@@ -96,6 +101,12 @@ body {
     /* right: 150px; */
     transform: translateX(-150px);
 }
+/* MOBILE OVERRIDE */
+/* @media (max-width: 600px) {
+    .instructions-frog {
+        transform: translateX(-25px);
+    }
+} */
 
 #restart-practice,
 #close-instructions {
