@@ -99,16 +99,9 @@ html, body {
     position: relative;
 
     /* right: 150px; */
-    transform: translateX(-150px);
-
-    background-color: red;
+    /* transform: translateX(-150px); */
+    right: 18vw;
 }
-/* MOBILE OVERRIDE */
-/* @media (max-width: 600px) {
-    .instructions-frog {
-        transform: translateX(-25px);
-    }
-} */
 
 #restart-practice,
 #close-instructions {
