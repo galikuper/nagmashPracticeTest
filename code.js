@@ -29,11 +29,11 @@ let questions = [
         pairs: [
             {
                 left: "צלב c6",
-                right: "מפתח 3/4"
+                right: "מפתח 9/16"
             },
             {
                 left: "צלב c7",
-                right: "מפתח 9/16"
+                right: "מפתח 3/4"
             },
             {
                 left: "גלגלים",
